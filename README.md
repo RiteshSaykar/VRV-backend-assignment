@@ -40,11 +40,13 @@ o	Starts the server on the specified port.
 
 
 Example Workflow
+
 1.	User Signs Up:
 o	Request hits /api/auth route.
 o	Routed to authController.js via authRoutes.js.
 o	User data is validated and saved using User.js.
-2.	Access-Control Middleware:
+
+3.	Access-Control Middleware:
 o	Middleware in middlewares/authorizeRoles.js verifies the user's role before granting access to certain routes.
 This modular structure ensures scalability, maintainability, and clean separation of concerns.
 
